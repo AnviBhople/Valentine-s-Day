@@ -149,7 +149,7 @@ body {
 .heart {
 	position: absolute;
 	bottom: 50px;
-	font-size: 3rem;
+	font-size: 2rem;
 	color: red;
 	animation: float 2s infinite;
 }
