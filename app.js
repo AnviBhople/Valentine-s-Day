@@ -4,7 +4,7 @@ function showFlowers() {
 
 	setTimeout(() => {
 		document.getElementById("valentineBtn").innerHTML =
-			"Will you be my Valentine? ❤️";
+			"You are my Valentine for life now!! ❤️";
 	}, 1500);
 }
 
