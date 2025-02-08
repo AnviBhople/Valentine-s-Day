@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	background: radial-gradient(circle, #ffccd5, #ff4d6d);
+	overflow: hidden;
+}
+
+.button {
+	background-color: #e63946;
+	color: white;
+	font-size: 24px;
+	padding: 14px 28px;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: 0.3s;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+	background-color: #d62839;
+	transform: scale(1.1);
+}
+
+.garden {
+	position: absolute;
+	bottom: -600px; /* Initially hidden */
+	display: flex;
+	gap: 30px;
+	transition: bottom 1.5s ease-in-out;
+}
+
+.rose {
+	position: relative;
+	width: 120px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.stem {
+	width: 8px;
+	height: 200px;
+	background-color: green;
+	position: absolute;
+	bottom: 0;
+	border-radius: 4px;
+}
+
+.leaf {
+	width: 25px;
+	height: 15px;
+	background-color: green;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.leaf.left {
+	left: -15px;
+	top: 100px;
+	transform: rotate(-30deg);
+}
+.leaf.right {
+	right: -15px;
+	top: 120px;
+	transform: rotate(30deg);
+}
+
+.flower {
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+.petal {
+	position: absolute;
+	width: 50px;
+	height: 70px;
+	background: radial-gradient(circle, #ff0000, #a00000);
+	border-radius: 50%;
+}
+
+.petal:nth-child(1) {
+	top: 10px;
+	left: 15px;
+	transform: rotate(-30deg);
+}
+.petal:nth-child(2) {
+	top: 10px;
+	left: 35px;
+	transform: rotate(30deg);
+}
+.petal:nth-child(3) {
+	top: -5px;
+	left: 25px;
+	transform: rotate(0deg);
+}
+.petal:nth-child(4) {
+	top: 25px;
+	left: 5px;
+	transform: rotate(-15deg);
+}
+.petal:nth-child(5) {
+	top: 25px;
+	left: 45px;
+	transform: rotate(15deg);
+}
+
+.center {
+	position: absolute;
+	top: 20px;
+	left: 25px;
+	width: 40px;
+	height: 40px;
+	background: radial-gradient(circle, #b00000, #5a0000);
+	border-radius: 50%;
+}
+
+/* Animation for floating hearts */
+@keyframes float {
+	0% {
+		transform: translateY(0);
+		opacity: 0.8;
+	}
+	50% {
+		transform: translateY(-30px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-60px);
+		opacity: 0;
+	}
+}
+
+.heart {
+	position: absolute;
+	bottom: 50px;
+	font-size: 24px;
+	color: #ff0033;
+	animation: float 2s infinite;
+}

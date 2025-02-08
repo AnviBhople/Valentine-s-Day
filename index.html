@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Valentine's Roses</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<button class="button" id="valentineBtn" onclick="showFlowers()">
+			🌹 Click for a Surprise 🌹
+		</button>
+
+		<div class="garden" id="garden">
+			<script>
+				for (let i = 0; i < 7; i++) {
+					document.write(`
+					<div class="rose">
+						<div class="stem"></div>
+						<div class="leaf left"></div>
+						<div class="leaf right"></div>
+						<div class="flower">
+							<div class="petal"></div>
+							<div class="petal"></div>
+							<div class="petal"></div>
+							<div class="petal"></div>
+							<div class="petal"></div>
+							<div class="center"></div>
+						</div>
+					</div>
+				`);
+				}
+			</script>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
