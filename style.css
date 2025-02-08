@@ -23,7 +23,7 @@ body {
 	border-radius: 30px;
 	cursor: pointer;
 	position: absolute;
-	top: 20px;
+	top: 4rem;
 	left: 50%;
 	transform: translateX(-50%);
 	transition: 0.3s;
@@ -37,7 +37,7 @@ body {
 
 .garden {
 	position: absolute;
-	bottom: -600px; 
+	bottom: -600px;
 	display: flex;
 	gap: 30px;
 	transition: bottom 1.5s ease-in-out;
@@ -62,21 +62,21 @@ body {
 }
 
 .leaf {
-	width: 25px;
-	height: 15px;
+	width: 2rem;
+	height: 4rem;
 	background-color: green;
 	position: absolute;
 	border-radius: 50%;
 }
 
 .leaf.left {
-	left: -15px;
-	top: 100px;
+	left: -0px;
+	top: 130px;
 	transform: rotate(-30deg);
 }
 .leaf.right {
-	right: -15px;
-	top: 120px;
+	right: -0px;
+	top: 130px;
 	transform: rotate(30deg);
 }
 
@@ -84,6 +84,7 @@ body {
 	position: relative;
 	width: 100px;
 	height: 100px;
+	gap: 2rem;
 }
 
 .petal {
@@ -130,7 +131,6 @@ body {
 	border-radius: 50%;
 }
 
-/* Animation for floating hearts */
 @keyframes float {
 	0% {
 		transform: translateY(0);
@@ -149,7 +149,7 @@ body {
 .heart {
 	position: absolute;
 	bottom: 50px;
-	font-size: 24px;
-	color: #ff0033;
+	font-size: 3rem;
+	color: red;
 	animation: float 2s infinite;
 }
