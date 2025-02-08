@@ -37,7 +37,7 @@ body {
 
 .garden {
 	position: absolute;
-	bottom: -600px; /* Initially hidden */
+	bottom: -600px; 
 	display: flex;
 	gap: 30px;
 	transition: bottom 1.5s ease-in-out;
